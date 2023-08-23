@@ -31,3 +31,8 @@ Use API endpoints to park and unpark vehicles, calculate fees, and manage availa
 
 https://www.postman.com/blue-shuttle-138271/workspace/public/collection/7445710-0ee46c33-9d5d-46d8-ae1a-51ac6e1b0b60?action=share&creator=7445710
 
+
+##Deployment
+
+The application is deployed to render.com utilizing Docker. It is containerized using Docker to ensure consistency across different environments. The deployment process involves creating a Docker image, pushing it to a container registry, and then deploying it to render.com.
+
