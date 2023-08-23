@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8d63d5dd_002Dee7d_002D4844_002D8ba4_002D5178cee250d2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnparkVehicle_ValidTicketNumber_ReturnsOkResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::AD9A4CE8-3C14-46F1-BDB5-05E658F4D996::net6.0::Tests.ParkingControllerTests.UnparkVehicle_ValidTicketNumber_ReturnsOkResult&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb6858dd_002D13b2_002D4d16_002D9b34_002D016b0e6416bb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnparkVehicle_ValidTicketNumber_ReturnsOkResult #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::AD9A4CE8-3C14-46F1-BDB5-05E658F4D996::net6.0::Tests.ParkingControllerTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,58 @@
+<div class="body-container">
+  <div class="body-half">
+<div>
+  <h2>Park Vehicle</h2>
+  <form (submit)="parkVehicle()">
+    <div>
+      <label for="vehicleType">Vehicle Type:</label>
+      <select id="vehicleType" [(ngModel)]="vehicleType" name="vehicleType">
+        <option value="Motorcycle">Motorcycle</option>
+        <option value="Car">Car</option>
+        <option value="Bus">Bus</option>
+      </select>
+    </div>
+    <div>
+      <label for="vehicleType">Location:</label>
+      <select id="location" [(ngModel)]="location" name="location">
+        <option value="Mall">Mall</option>
+        <option value="Airport">Airport</option>
+        <option value="Stadium">Stadium</option>
+      </select>
+    </div>
+
+    <button type="submit">Park</button>
+  </form>
+</div>
+  </div>
+  <div class="body-half">
+<div>
+  <div class="info-card">
+    <h2 class="card-title">Parking Information</h2>
+    <div class="info">
+      <div class="info-label">Ticket Number:</div>
+      <div class="info-value">{{ parkingInfo?.spotNumber == 0 ? ' - ': parkingInfo?.ticketNumber }}</div>
+    </div>
+    <div class="info">
+      <div class="info-label">Spot Number:</div>
+      <div class="info-value">{{ (parkingInfo?.spotNumber == 0 )? 'No Spot available in this location': parkingInfo?.spotNumber}}</div>
+    </div>
+    <div class="info">
+      <div class="info-label">Entry Date & Time:</div>
+      <div class="info-value">{{ parkingInfo?.spotNumber == 0 ? ' - ':parkingInfo?.entryDateTime }}</div>
+    </div>
+    <div class="info">
+      <div class="info-label">Vehicle:</div>
+      <div class="info-value">{{ parkingInfo?.vehicle }}</div>
+    </div>
+    <div class="info">
+      <div class="info-label">Location:</div>
+      <div class="info-value">{{ parkingInfo?.location }}</div>
+    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+<app-parking-grid *ngIf="requestState"></app-parking-grid>
+
+

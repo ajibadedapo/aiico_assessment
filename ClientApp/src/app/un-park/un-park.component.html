@@ -1,0 +1,43 @@
+<div class="body-container">
+  <div class="body-half">
+<h2>Unpark Vehicle</h2>
+<form (submit)="unparkVehicle()">
+  <label for="ticketNumber">Ticket Number:</label>
+  <select id="ticketNumber" [(ngModel)]="ticketNumber" name="ticketNumber" [hidden]="ticketsStatus">
+    <option [value]="null" [disabled]="true" selected>Select Ticket Number</option>
+    <option *ngFor="let ticket of availableTicketNumbers" [value]="ticket.ticketNumber">{{ ticket.vehicle }} - spot {{ ticket.spotNumber }}</option>
+  </select>
+  <h6 *ngIf="ticketsStatus" style="color: red">No Parked Vehicle</h6>
+  <!-- <input type="text" id="ticketNumber" [(ngModel)]="ticketNumber" name="ticketNumber"> -->
+  <button type="submit" [disabled]="ticketsStatus" >Unpark</button>
+</form>
+  </div>
+  <div class="body-half">
+    <div class="info-card">
+      <h2 class="card-title">Receipt Information</h2>
+      <div class="info">
+        <div class="info-label">Receipt Number:</div>
+        <div class="info-value">{{ receiptInfo?.receiptNumber }}</div>
+      </div>
+      <div class="info">
+        <div class="info-label">Entry Date & Time:</div>
+        <div class="info-value">{{ receiptInfo?.entryDateTime }}</div>
+      </div>
+      <div class="info">
+        <div class="info-label">Exit Date & Time:</div>
+        <div class="info-value">{{ receiptInfo?.exitDateTime }}</div>
+      </div>
+      <div class="info">
+        <div class="info-label">Fee:</div>
+        <div class="info-value">{{ receiptInfo?.fee }} NGN</div>
+      </div>
+      <div class="info">
+        <div class="info-label">Location:</div>
+        <div class="info-value">{{ receiptInfo?.location }}</div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+    <app-parking-grid *ngIf="requestState"></app-parking-grid>
+

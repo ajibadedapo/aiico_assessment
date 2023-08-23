@@ -1,0 +1,16 @@
+<div class="border">
+<h3>PARKING LOTS</h3>
+<div class="grid">
+  <div class="location" *ngFor="let location of availableSpotsMap | keyvalue">
+    <h4>{{ location.key }}</h4>
+    <div class="vehicle-types">
+      <div class="vehicle-type" *ngFor="let spot of location.value | keyvalue">
+        <p>{{ spot.key }}</p>
+        <ul>
+          <li *ngFor="let spotNumber of spot.value" class="parking-lot">{{ spotNumber }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

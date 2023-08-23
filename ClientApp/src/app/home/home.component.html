@@ -1,0 +1,18 @@
+
+  <h1>Parking Application</h1>
+  <div>
+    <label for="vehicleType">Select Action:</label>
+    <select [(ngModel)]="selectedForm" id="vehicleType">
+      <option value="park">Park Vehicle</option>
+      <option value="unpark">Unpark Vehicle</option>
+    </select>
+  </div>
+
+  <div *ngIf="selectedForm === 'park'">
+    <app-park></app-park>
+  </div>
+  <div *ngIf="selectedForm === 'unpark'">
+    <app-unpark></app-unpark>
+  </div>
+
+  <!-- <app-parking-grid *ngIf="requestState" (parkGrid)="getParkingGrid()" [availableSpotsMap]="availableSpotsMap"></app-parking-grid> -->
