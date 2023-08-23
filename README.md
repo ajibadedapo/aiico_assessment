@@ -4,6 +4,7 @@
 
 This repository contains a parking lot management system implemented in C# and .NET Core 6. The system allows you to simulate parking vehicles in different locations, calculate fees, and manage available spots.
 
+Test URL: https://aiico.onrender.com/
 
 ## Features
 
