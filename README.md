@@ -35,7 +35,7 @@ Payload
     "ticketNumber": 1
 }
 
-- GET `/api/parking/available-tickets`: Add a new parking spot.
+- GET `/api/parking/available-tickets`: Get booked tickets.
 - GET `/api/parking/available-parking`: Get parking spot.
 
 
