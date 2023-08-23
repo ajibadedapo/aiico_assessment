@@ -22,9 +22,20 @@ Use API endpoints to park and unpark vehicles, calculate fees, and manage availa
 
 ## API Endpoints
 
-- POST `/api/parking/park-vehicle`: Park a vehicle.
-- POST `/api/parking/unpark-vehicle/{ticketNumber}`: Unpark a vehicle by ticket number.
-- POST `/api/parking/add-spot`: Add a new parking spot.
+- POST `/api/parking`: Park a vehicle.
+Payload
+{
+    "location": "Airport",
+    "vehicleType": "Buses"
+}
+
+- POST `/api/parking/unpark`: Unpark a vehicle by ticket number.
+{
+    "ticketNumber": 1
+}
+
+- GET `/api/parking/available-tickets`: Add a new parking spot.
+- GET `/api/parking/available-parking`: Get parking spot.
 
 
 ## collection
